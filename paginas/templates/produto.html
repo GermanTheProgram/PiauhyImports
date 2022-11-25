@@ -1,0 +1,138 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{%static 'img/logo.png' %}" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Pen Driver 1 2TB HP Metal</title>
+</head>
+<body>
+    <div class="container">
+        <!--header-->
+        <header class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom">
+            <a href="/" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none fs-2 fw-bold">
+                Piauhy Imports
+            </a>
+            
+            <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2 link-dark">Contato</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">Pedidos</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">Sobre Nós</a></li>
+                <li><a href="#" class="nav-link px-2 link-dark">Produtos</a></li>
+            </ul>
+            
+            <div class="col-md-3 text-end">
+                <a class="btn btn-outline-danger me-2" href="login.html">Entrar</a>
+                <a class="btn btn-danger" href="login.html">Cadastrar</a>
+            </div>
+        </header>
+
+        <!--conteudo principal-->
+        <div>
+            <div class="row">
+                <!--imagem do produto-->
+                <div class="col">
+                    <img class="border rounded shadow-sm" src="{%static 'img/pen-drive.png' %}" alt="pendrive">
+                </div>
+
+                <!--descrição-->
+                <div class="col-sm-7 border">
+                    <h1>Pen Driver 1 2TB HP Metal</h1>
+                    <p class="border-bottom pb-2">Marca: HP</p>
+                    <h2 class=""><sup>R$</sup> 45<sup>00</sup></h2>
+                    <p>Formas de pagamento:</p>
+                    <ul class="border-bottom pb-2">
+                        <li>Pix</li>
+                        <li>Tranferência</li>
+                    </ul>
+                    <div class="table-responsive-sm">
+                        <table class="table border">
+                            <thead>
+                              <tr>
+                                <th scope="col">Modelo</th>
+                                <th scope="col">Capacidade</th>
+                                <th scope="col">Cor</th>
+                              </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                              <tr>
+                                <td>HP</td>
+                                <td>1/2 TB</td>
+                                <td>Preto/Metal</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                      </div>
+                      <div class="mb-4">
+                          <p class="fw-bold">Entrega Grátis - Previsão de entrega: 8 - 14 de Dezembro</p>
+                          <label for="quantidade">Quantidade:</label>
+                          <select name="quantidade" id="quantidade" class="border-secondary shadow-sm rounded px-2">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                          </select>
+                        </div>
+                    <button class="btn btn-secondary">Adicionar ao carrinho</button>
+                    <button class="btn btn-danger mx-3">Comprar Agora</button>
+                </div>
+            </div>
+        </div>
+        <!--Outros Produtos-->
+        <h3 class="mt-4 border-top pt-2">Outros Produtos:</h3>
+        <div class="row gap-5 pt-3 justify-content-center">
+            <div class="card" style="max-width: 400px; height: 200px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="{% static 'img/smartwatch.png' %}" class="img-fluid rounded-start mt-1" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Smartwatch Y68 D20 Relógio Inteligente</h5>
+                      <p class="card-text">R$ 50.00</p>
+                      <p class="card-text"><small class="text-muted"><a class="btn btn-outline-danger" href="#">Ver Mais</a></small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="max-width: 400px; height: 200px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="{% static 'img/fone-jbl.png' %}" class="img-fluid rounded-start mt-4" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Fone de ouvido sem fio JBL i12 TWS</h5>
+                      <p class="card-text">R$ 50.00</p>
+                      <p class="card-text"><small class="text-muted"><a class="btn btn-outline-danger" href="#">Ver Mais</a></small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card" style="max-width: 400px; height: 200px;">
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="{% static 'img/ring.png' %}" class="img-fluid rounded-start mt-4" alt="...">
+                  </div>
+                  <div class="col-md-8">
+                    <div class="card-body">
+                      <h5 class="card-title">Ring Light com suporte para celular</h5>
+                      <p class="card-text">R$ 50.00</p>
+                      <p class="card-text"><small class="text-muted"><a class="btn btn-outline-danger" href="#">Ver Mais</a></small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+    </div><!--container-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
